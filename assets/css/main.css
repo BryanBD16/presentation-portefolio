@@ -117,7 +117,6 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
 		}
 
 	strong, b {
@@ -2652,38 +2651,41 @@ input, select, textarea {
 
 /* Features */
 
-	.features article {
-		border-top: solid 3px #f4f4f4;
-		margin-bottom: 2.25em;
-		padding-top: 2.25em;
-	}
-
-		.features article:first-child {
-			border-top: 0;
-			padding-top: 0;
+		.features article {
+			margin-bottom: 2.25em;
+			padding: 1.5em;
+			transition: background 0.3s;
 		}
 
-		.features article .image {
-			display: inline-block;
-			padding-right: 2.5em;
-			vertical-align: middle;
-			width: 48%;
+
+		.features article a {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: inherit;
 		}
 
-			.features article .image img {
-				display: block;
-				width: 100%;
-			}
+		.features article .logo {
+			width: 60px;
+			margin-right: 1em;
+			flex-shrink: 0;
+		}
+
+		.features article .logo img {
+			display: block;
+			width: 100%;
+		}
 
 		.features article .inner {
-			display: inline-block;
-			vertical-align: middle;
-			width: 50%;
+			flex: 1;
 		}
 
-			.features article .inner > :last-child {
-				margin-bottom: 0;
-			}
+		.features article:hover {
+			background-color: #f0f0f0;
+			cursor: pointer;
+			border-radius: 8px;
+		}
+
 
 /* Header */
 
